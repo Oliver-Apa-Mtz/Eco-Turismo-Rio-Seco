@@ -1,0 +1,27 @@
+.cardImage{
+	width:100%;
+	border-radius: 5px;
+	padding: 40px;
+	max-height: 700px;
+	transition: all .2s ease-out;
+	cursor: pointer;
+	text-align: center;
+}
+.cardImage--custom{
+	margin-top: 40px;
+}
+.cardImage:hover{
+	margin-top: -10px;
+}
+.cardImage--custom:hover {
+	margin-top: 30px;
+}
+.cardImage__title{
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 55px;
+	margin-bottom: 55px;
+}
+.cardImage__text{
+	font-size: 20px;
+}
