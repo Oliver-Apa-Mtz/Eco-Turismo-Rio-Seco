@@ -1,5 +1,7 @@
 import './card.css';
 
+import Button from '../Button';
+
 interface Props {
 	index: number;
 	title: string;
@@ -13,6 +15,9 @@ const Card = ({ index, title, colorTitle, description, image }: Props) => {
 			<div>
 				<h5 className={`cardImage__title font-sans text-${colorTitle} font-bold text-2xl mb-2 text-center`}>{title}</h5>
 				<p className="cardImage__text font-serif">{description}</p>
+				<div className="cardImage__button">
+					<Button text="Ver más" type="primary" />
+				</div>
 			</div>
 		</div>
 	)

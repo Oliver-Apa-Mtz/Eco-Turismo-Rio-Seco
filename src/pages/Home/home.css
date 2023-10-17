@@ -38,3 +38,24 @@
 	font-size: 50px;
 	line-height: 60px;
 }
+.cards-content{
+	margin-bottom: 80px;
+}
+.slider-content{
+	padding: 60px 0 100px;
+	background-color: black;
+}
+.slider-content__title{
+	font-size: 50px;
+	line-height: 60px;
+	color: white;
+	margin-bottom: 80px;
+	text-align: center;
+}
+.slider-content__subtitle{
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	color: white;
+	text-align: center;
+}

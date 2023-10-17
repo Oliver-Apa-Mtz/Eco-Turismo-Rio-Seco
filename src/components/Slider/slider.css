@@ -1,0 +1,15 @@
+.slider-item{
+	color: #fff;
+	font-weight: 300;
+	padding-left: 40px;
+}
+.slider-title{
+	text-decoration: underline;
+	font-weight: 700;
+	margin-top: 20px;
+}
+.slider-description{
+	font-size: 30px;
+	font-weight: 300;
+	margin-top: 20px;
+}
