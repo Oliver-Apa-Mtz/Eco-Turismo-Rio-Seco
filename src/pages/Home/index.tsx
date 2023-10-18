@@ -1,12 +1,15 @@
 
+import { useEffect } from "react";
 import { motion } from "framer-motion";
+import { animateScroll as scroll } from 'react-scroll';
 import './home.css';
+
 import Layout from '../../components/Layout';
 import Card from '../../components/Card';
 import SliderImages from '../../components/Slider';
 
 import videoSource from '../../assets/img/background.mp4';
-import backgroundImage from '../../assets/img/fondo-5.jpg';
+import backgroundImage from '../../assets/img/fondo.png';
 import image1 from '../../assets/img/fondo-3.jpg';
 import image2 from '../../assets/img/act2.jpg';
 import image4 from '../../assets/img/act4.jpg';
@@ -71,6 +74,14 @@ const DataSlider = [
 ]
 const Home = () => {
 
+	useEffect(() => {
+		const options = {
+			duration: 0,
+			smooth: false,
+		};
+		scroll.scrollToTop(options);
+	}, [])
+
 	return (
 		<Layout>
 			{
@@ -110,8 +121,8 @@ const Home = () => {
 					</div>
 
 					<div className="slider-content">
-						<h5 className="slider-content__subtitle font-sans">¡Conocenos!</h5>
-						<h3 className="slider-content__title font-serif">Descubre nuevas aventuras</h3>
+						<h5 className="slider-content__subtitle font-sans text-terciario">¡Conocenos!</h5>
+						<h3 className="slider-content__title font-serif text-secundario">Descubre nuevas aventuras</h3>
 						<SliderImages data={DataSlider} />
 					</div>
 

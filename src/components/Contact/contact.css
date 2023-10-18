@@ -1,5 +1,23 @@
 .contact{
 	width: 100%;
 	min-height: 300px;
+	padding-top: 100px;
 	background-color: black;
+}
+.contact__contain{
+	width: 100%;
+	max-width: 800px;
+	padding: 20px;
+	margin: 0 auto;
+	text-align: center;
+}
+.contact__title{
+	font-weight: 700;
+	font-size: 50px;
+	margin-bottom: 20px;
+	line-height: 60px;
+}
+.contact__subtitle{
+	font-size: 20px;
+	font-weight: 300;
 }

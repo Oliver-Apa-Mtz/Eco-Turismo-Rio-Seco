@@ -1,6 +1,9 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
-import Layout from '../../components/Layout';
+import { animateScroll as scroll } from 'react-scroll';
 import './activities.css';
+
+import Layout from '../../components/Layout';
 
 import image1 from '../../assets/img/fondo-4.jpg';
 import image2 from '../../assets/img/act2.jpg';
@@ -8,12 +11,21 @@ import image3 from '../../assets/img/act3.jpg';
 import image4 from '../../assets/img/act4.jpg';
 import image5 from '../../assets/img/fondo-5.jpg';
 import image6 from '../../assets/img/slider3.jpg';
-import image7 from '../../assets/img/act1.jpg';
 import image8 from '../../assets/img/fondo-1.jpg';
 import image9 from '../../assets/img/fondo-3.jpg';
-
+import image10 from '../../assets/img/rest1.jpg';
+import image11 from '../../assets/img/rest2.jpg';
+import image12 from '../../assets/img/rest3.jpg';
 
 const Activities = () => {
+
+	useEffect(() => {
+		const options = {
+			duration: 0,
+			smooth: false,
+		};
+		scroll.scrollToTop(options);
+	}, [])
 
 	return (
 		<Layout>
@@ -104,9 +116,6 @@ const Activities = () => {
 					</div>
 
 					<div className="about--activity grid gap-10 grid-cols-2">
-						<div>
-							<img src={image2} className="about__image--img" loading="lazy" decoding="async" alt="" />
-						</div>
 						<div className="about__text">
 							<div className="about__text--image">
 								<img src={image6} className="about__image--img" loading="lazy" decoding="async" alt="" />
@@ -114,6 +123,9 @@ const Activities = () => {
 							<div className="about__text--image--custom">
 								<img src={image1} className="about__image--img" loading="lazy" decoding="async" alt="" />
 							</div>
+						</div>
+						<div>
+							<img src={image2} className="about__image--img" loading="lazy" decoding="async" alt="" />
 						</div>
 					</div>
 
@@ -126,6 +138,9 @@ const Activities = () => {
 					</div>
 
 					<div className="about--activity grid gap-10 grid-cols-2">
+						<div>
+							<img src={image3} className="about__image--img" loading="lazy" decoding="async" alt="" />
+						</div>
 						<div className="about__text">
 							<div className="about__text--image">
 								<img src={image6} className="about__image--img" loading="lazy" decoding="async" alt="" />
@@ -133,9 +148,6 @@ const Activities = () => {
 							<div className="about__text--image--custom">
 								<img src={image1} className="about__image--img" loading="lazy" decoding="async" alt="" />
 							</div>
-						</div>
-						<div>
-							<img src={image3} className="about__image--img" loading="lazy" decoding="async" alt="" />
 						</div>
 					</div>
 
@@ -164,6 +176,20 @@ const Activities = () => {
 							Disfruta de mariscos frescos y platos locales mientras contemplas
 							la puesta de sol.
 						</h5>
+					</div>
+
+					<div className="about--activity grid gap-10 grid-cols-2">
+						<div className="about__text">
+							<div className="about__text--image">
+								<img src={image10} className="about__image--img" loading="lazy" decoding="async" alt="" />
+							</div>
+							<div className="about__text--image--custom">
+								<img src={image11} className="about__image--img" loading="lazy" decoding="async" alt="" />
+							</div>
+						</div>
+						<div>
+							<img src={image12} className="about__image--img" loading="lazy" decoding="async" alt="" />
+						</div>
 					</div>
 
 				</motion.div>

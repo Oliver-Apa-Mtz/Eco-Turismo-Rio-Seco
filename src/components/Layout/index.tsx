@@ -9,7 +9,7 @@ const Layout = ({ children }: Props) => {
 	return (
 		<div>
 			<Header />
-			<main>
+			<main className="body-contain">
 				{children}
 			</main>
 			<Mapa />

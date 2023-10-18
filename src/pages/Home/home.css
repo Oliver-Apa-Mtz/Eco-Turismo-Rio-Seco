@@ -16,7 +16,6 @@
 	font-weight: 700;
 	text-shadow: 0px 4px 6px rgba(0,0,0,.3);
 	line-height: 40px;
-	/*backdrop-filter: blur(1px);*/
 }
 .text-ppal span{
 	font-size: 22px;
@@ -48,7 +47,6 @@
 .slider-content__title{
 	font-size: 50px;
 	line-height: 60px;
-	color: white;
 	margin-bottom: 80px;
 	text-align: center;
 }
@@ -56,6 +54,5 @@
 	font-size: 20px;
 	font-weight: 700;
 	margin-bottom: 20px;
-	color: white;
 	text-align: center;
 }
