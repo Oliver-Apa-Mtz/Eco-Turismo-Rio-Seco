@@ -12,7 +12,7 @@ import videoSource from '../../assets/img/background.mp4';
 import backgroundImage from '../../assets/img/fondo.png';
 import image1 from '../../assets/img/fondo-3.jpg';
 import image2 from '../../assets/img/act2.jpg';
-import image4 from '../../assets/img/act4.jpg';
+import image4 from '../../assets/img/img-4.jpeg';
 
 //Sliders Images
 import Slider1 from '../../assets/img/slider1.jpg';
@@ -147,9 +147,6 @@ const Home = () => {
 						<div className="about__image--home">
 							<div className="flex justify-end">
 								<img src={image2} className="about__image--img" loading="lazy" decoding="async" alt="" />
-							</div>
-							<div className="about__image--custom flex justify-center">
-								<img src={image1} className="about__image--img" loading="lazy" decoding="async" alt="" />
 							</div>
 						</div>
 					</div>

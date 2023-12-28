@@ -1,6 +1,14 @@
 import './contact.css'
 
+import Icon from '../../assets/img/whatsapp.png';
+
 const Contact = () => {
+
+	const openWhatsApp = (phoneNumber: string) => {
+		const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&amp;text=Hola, quiero más informes de Río Seco`;
+		window.open(whatsappUrl, '_blank');
+	}
+
 	return (
 		<div id="contacto" className="contact">
 			<div className="contact__contain">
@@ -12,8 +20,8 @@ const Contact = () => {
 					impresiones, estaremos encantados de
 					escucharte.
 				</p>
-				<div className="contact__form">
-					in
+				<div className="contact__form cursor-pointer">
+					<img onClick={() => openWhatsApp('529951020036')} src={Icon} alt="" />
 				</div>
 			</div>
 		</div>

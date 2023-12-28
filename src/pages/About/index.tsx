@@ -72,7 +72,8 @@ const About = () => {
 							<h3 className="about__text--subtitle">Nosotros</h3>
 							<h1 className="about__text--title text-principal">Rio Seco</h1>
 							<p className="about__text--info">
-								Bienvenidos a Río Seco, un rincón paradisíaco
+								Bienvenidos a Flor del Pacífico ubicados en la
+								Playa Morro Ayuta del Ejido Río Seco, un rincón paradisíaco
 								donde la naturaleza se une con la aventura.
 								Situada en la costa, Río Seco es un tesoro
 								escondido que ofrece un sinfín de experiencias
