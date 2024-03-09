@@ -17,6 +17,8 @@ import image10 from '../../assets/img/rest1.jpg';
 import image12 from '../../assets/img/img-2.jpeg';
 import image13 from '../../assets/img/img-1.jpeg';
 
+import video from '../../assets/img/reel1.mp4';
+
 const Activities = () => {
 
 	useEffect(() => {
@@ -57,7 +59,10 @@ const Activities = () => {
 							</p>
 						</div>
 						<div className="about__image flex justify-end">
-							<img src={image6} className="about__image--img" loading="lazy" decoding="async" alt="" />
+							<video className="w-full h-auto max-w-full" controls>
+								<source src={video} type="video/mp4" />
+								Your browser does not support the video tag.
+							</video>
 						</div>
 					</div>
 

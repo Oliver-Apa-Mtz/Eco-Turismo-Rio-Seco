@@ -7,7 +7,6 @@ import Layout from '../../components/Layout';
 import SliderImages from '../../components/Slider';
 
 import image1 from '../../assets/img/fondo-3.jpg';
-import image2 from '../../assets/img/act2.jpg';
 import image3 from '../../assets/img/act3.jpg';
 
 //Sliders Images
@@ -15,6 +14,8 @@ import Slider1 from '../../assets/img/slider1.jpg';
 import Slider2 from '../../assets/img/slider2.jpg';
 import Slider3 from '../../assets/img/slider3.jpg';
 import Slider4 from '../../assets/img/fondo-1.jpg';
+
+import video from '../../assets/img/reel2.mp4';
 
 const DataSlider = [
 	{
@@ -85,7 +86,10 @@ const About = () => {
 							</p>
 						</div>
 						<div className="about__image flex justify-end">
-							<img src={image2} className="about__image--img" loading="lazy" decoding="async" alt="" />
+							<video className="w-full h-auto max-w-full" controls>
+								<source src={video} type="video/mp4" />
+								Your browser does not support the video tag.
+							</video>
 						</div>
 					</div>
 

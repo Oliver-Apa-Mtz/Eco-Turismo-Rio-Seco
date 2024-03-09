@@ -8,7 +8,7 @@ import Layout from '../../components/Layout';
 import Card from '../../components/Card';
 import SliderImages from '../../components/Slider';
 
-import videoSource from '../../assets/img/background.mp4';
+import videoSource from '../../assets/img/video1.mp4';
 import backgroundImage from '../../assets/img/fondo.png';
 import image1 from '../../assets/img/fondo-3.jpg';
 import image2 from '../../assets/img/act2.jpg';

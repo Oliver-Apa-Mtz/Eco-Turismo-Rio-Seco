@@ -6,6 +6,7 @@
 }
 .about__text, .about__image{
 	padding: 0 40px;
+	position: relative;
 }
 .about__text--subtitle {
 	text-decoration: underline;
@@ -31,7 +32,7 @@
 	width: 400px;
 	margin: 150px auto;
 }
-.about__image img{
+.about__image img, .about__image video{
 	width: 500px;
 	height: max-content;
 }
