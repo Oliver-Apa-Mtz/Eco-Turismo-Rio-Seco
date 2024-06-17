@@ -275,8 +275,8 @@ const Main = () => {
 									<p className="be-vietnam-pro-light">2024 © Todos los derechos reservados.</p>
 								</div>
 								<div className="text-center md:text-right flex justify-center md:justify-end flex-wrap">
-									<a href="">
-										<img className="w-[100px] mb-2" src={Dinno} alt="" />
+									<a href="https://www.dinno.com.mx/" target="_blank">
+										<img className="w-[100px] mb-2" src={Dinno} alt="Agencia Dinno" />
 									</a>
 									<p className="be-vietnam-pro-light w-full">Desarrollado por Agencia Dinno</p>
 								</div>
