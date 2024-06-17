@@ -4,15 +4,12 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				principal: "#0F323E",
-				secundario: "#f6f2ef",
-				terciario: "#1fb256",
+				principal: "#F5F5F5",
+				secundario: "#854DFC",
+				terciario: "#BDFF1C",
 				white: "#FFFFFF",
+				black: "rgb(13, 12, 12)",
 			},
-		},
-		fontFamily: {
-			sans: ["Montserrat", "sans-serif"],
-			serif: ["Playfair Display", "serif"],
 		},
 	},
 	plugins: [],

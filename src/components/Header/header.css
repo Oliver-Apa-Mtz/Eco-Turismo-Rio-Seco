@@ -1,24 +1,102 @@
-.header{
-	position: fixed;
+.header {
+	width: 100%;
+	height: 70px;
 	z-index: 99;
-	min-height: 50px;
-	text-align: center;
-	padding: 5px 0;
-	background-color: rgba(255,255,255,.6);
-	box-shadow: 0px 4px 8px rgba(0,0,0,.1);
-	backdrop-filter: blur(10px);
+	position: fixed;
+	left: 0;
+	top: 0;
+	transition: all .3s;
+	background-color: white !important;
+	box-shadow: 0px 3px 30px rgba(0,0,0,.05);
 }
-.header__item{
-	padding: 10px 30px;
-	font-weight: 300;
-	font-size: 12px;
+.header__content {
+	width: 100%;
+	max-width: 1240px;
+	padding: 0 20px;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__logo {
+	width: 30%;
+	font-size: 2rem;
+}
+.header__nav {
+	width: 40%;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	justify-content: center;
+	transition: all .3s;
+}
+.header__nav__item {
+	position: relative;
+	font-size: 1rem;
 	cursor: pointer;
-	font-weight: 700;
-	letter-spacing: 0.4px;
+	display: flex;
+	align-items: center;
+	transition: all .3s;
 }
-.header__item--title {
-	font-size: 20px;
+.header__buttons {
+	width: 30%;
+	display: flex;
+	justify-content: flex-end;
 }
-.header__item--divisor{
-	border-right: 1px solid lightgray;
+.header__menu {
+	display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+	.header__nav, .header__buttons {
+		display: none;
+	}
+
+	.header__menu {
+		width: 60px;
+		display: flex;
+		align-items: center;
+		color: white;
+		justify-content: flex-end;
+	}
+
+	.header:hover .header__menu,
+	.fixed .header__menu,
+	.header--active .header__menu {
+		color: #573CFF !important;
+	}
+
+	.header__nav__movil {
+		position: fixed;
+		left: 0;
+		top: 70px;
+		width: 100%;
+		border-top: 2px solid black;
+		box-shadow: 0px 4px 7px rgba(0, 0, 0, .1);
+	}
+
+	.header__nav__item__movil {
+		padding: 20px;
+		width: 100%;
+		display: block;
+		background-color: white;
+		transition: all .2s;
+		cursor: pointer;
+	}
+
+	.header__nav__item__movil:hover {
+		background-color: #BDFF1C;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.header {
+		background-color: white !important;
+		box-shadow: 0px 4px 7px rgba(0, 0, 0, .05);
+	}
+	.header__logo {
+		width: 60%;
+		font-size: 1.8rem;
+	}
 }

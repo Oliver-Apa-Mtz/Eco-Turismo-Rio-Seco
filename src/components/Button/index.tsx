@@ -2,13 +2,12 @@ import './button.css';
 
 interface Props {
 	text: string;
-	type: string;
 	onClick?: () => void;
 }
 
-const Button = ({ text, type, onClick }: Props) => {
+const Button = ({ text, onClick }: Props) => {
 	return (
-		<div className={`button-custom button-custom__${type}`} onClick={onClick}>
+		<div className={`button-custom`} onClick={onClick}>
 			<div>
 				<p className="font-sans">{text}</p>
 			</div>
