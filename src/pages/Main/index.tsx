@@ -17,7 +17,6 @@ import image4 from '../../assets/img/img-2.jpeg';
 import image5 from '../../assets/img/img-4.jpeg';
 import image6 from '../../assets/img/act2.jpg';
 import image7 from '../../assets/img/rest1.jpg';
-import Beach1 from '../../assets/img/beach-1.webp';
 import Beach2 from '../../assets/img/beach-2.webp';
 import Beach3 from '../../assets/img/beach-3.webp';
 import Dinno from '../../assets/img/logo-dinno.png';
