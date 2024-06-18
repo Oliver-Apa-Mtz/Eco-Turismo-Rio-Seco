@@ -17,6 +17,9 @@ import image4 from '../../assets/img/img-2.jpeg';
 import image5 from '../../assets/img/img-4.jpeg';
 import image6 from '../../assets/img/act2.jpg';
 import image7 from '../../assets/img/rest1.jpg';
+import Beach1 from '../../assets/img/beach-1.webp';
+import Beach2 from '../../assets/img/beach-2.webp';
+import Beach3 from '../../assets/img/beach-3.webp';
 import Dinno from '../../assets/img/logo-dinno.png';
 
 const Main = () => {
@@ -70,6 +73,7 @@ const Main = () => {
 					</div>
 
 					<div className="main" id="about">
+						<img className="Beach3" src={Beach3} alt="Ubicados en la Playa Morro Ayuta del Ejido Río Seco, un rincón paradisíaco donde la naturaleza se une con la aventura." />
 						<div className="main__content" style={{ paddingBottom: '0px' }}>
 							<div className="text-center mb-20 w-full md:w-3/4 mx-auto">
 								<h2 className="main__text__title mb-6 poppins-medium">Ejido Rio Seco</h2>
@@ -216,6 +220,7 @@ const Main = () => {
 								</div>
 							</div>
 						</div>
+						<img className="Beach2" src={Beach2} alt="Río Seco es mucho más que una playa; es una comunidad dedicada a la protección de las tortugas marinas." />
 					</div>
 
 					<div className="main bg-principal">
@@ -260,8 +265,8 @@ const Main = () => {
 						</div>
 					</div>
 
-					<div className="main">
-						<div className="main__content main__content--custom">
+					<div className="main bg-principal">
+						<div className="main__content main__content--custom relative z-10">
 							<div className="md:flex justify-between items-end">
 								<div className="text-center md:text-start mb-6 md:mb-0">
 									<p className="text-4xl md:text-8xl mb-8 poppins-bold">Rio Seco</p>

@@ -1,5 +1,6 @@
 .main{
 	width: 100%;
+	position: relative;
 }
 .main__content{
 	width: 100%;
@@ -55,6 +56,27 @@
 .main__slider--ppal{
 	margin-bottom: 60px;
 }
+.Beach3{
+	position: absolute;
+	width: 600px;
+	top: 0;
+	left: 0;
+}
+.Beach2 {
+	position: absolute;
+	width: 600px;
+	bottom: 0;
+	right: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+	.Beach3 {
+		width: 400px;
+	}
+	.Beach2 {
+		width: 500px;
+	}
+}
 
 @media only screen and (max-width: 1024px){
 	.main__content {
@@ -92,6 +114,12 @@
 	.main__content--custom{
 		padding-bottom: 30px;
 	}
+	.Beach3 {
+		position: relative;
+	}
+	#about .main__content{
+		margin-top: -200px;
+	}
 }
 @media only screen and (max-width: 639px) {
 	.footer--efect{
@@ -100,5 +128,8 @@
 	.footer-a{
 		display: block;
 		margin-bottom: 10px;
+	}
+	#about .main__content {
+		margin-top: -150px;
 	}
 }
